@@ -1,0 +1,35 @@
+data:
+  cat: car
+  train:
+    origin: shapenet
+    path: #### path to data
+    split: train
+    bg: False
+    bg_path: 
+  val:
+    origin: shapenet
+    path: #### path to data
+    split: val
+    bg: False
+    bg_path: 
+  test:
+    origin: shapenet
+    path: #### path to data
+    split: test
+    bg: False
+    bg_path: 
+
+training:
+  cuda: True
+  cycle: False
+  bs: 64
+  epochs: 1000
+  lr: 0.0001
+  eps: 0
+  resume: 0
+  resume_path: 
+  ckpt_path: #### path to checkpoints
+
+model:
+  cont_size: 256
+  n_heads: 3
